@@ -1,6 +1,10 @@
+@import "scss/hover";
+
 header{
+  color: #2f2f2f;
   text-align: center;
-  background: url("img/bg.jpg");
+  background: url("img/bg2.jpg");
+
 }
 
 .container {
@@ -12,20 +16,36 @@ header{
 }
 
 .game{
+  transition:0.5s;
   padding: 10px;
+  &:hover{
+    transform: scale(1.1);
+  }
 
 }
 .buttonsContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  //height: 200px;
-  //width: 100%;
+  height: 200px;
+  width: 100%;
 }
 .menuButton{
+  @extend .hvr-float;
   margin: 1%;
   width: 60px;
   height: 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+
+  &:hover{
+    background-color: #A281C8;
+
+
+
+  }
 }
+
+
 
 

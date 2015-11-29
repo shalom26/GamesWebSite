@@ -1,0 +1,15 @@
+.parent {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.child {
+  margin: auto;
+  background-color: orangered;
+  height: 100px;
+  width: 25%; }
+
+/*# sourceMappingURL=style-home.css.map */
