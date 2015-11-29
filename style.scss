@@ -1,0 +1,38 @@
+body{
+  text-align: center;
+  display: flex;
+}
+
+.topBg{
+  z-index: -1;
+  width: 100%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+}
+
+#bgImg{
+  @extend.topBg ;
+  opacity: 1;
+ }
+
+.container{
+  margin: auto;
+  position: absolute;
+
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.game{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  outline: 2px blue;
+  background-color: aquamarine;
+}
+
+
