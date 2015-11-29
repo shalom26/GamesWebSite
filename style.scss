@@ -1,6 +1,6 @@
 body{
   text-align: center;
-  display: flex;
+  background: url("img/bg.jpg");
 }
 
 .topBg{
@@ -8,31 +8,26 @@ body{
   width: 100%;
   height: 20%;
   margin: auto;
-  display: flex;
-}
+  }
 
 #bgImg{
   @extend.topBg ;
   opacity: 1;
  }
 
-.container{
-  margin: auto;
-  position: absolute;
-
+.container img {
   display: flex;
+  margin: auto;
   flex-wrap:wrap;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .game{
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width:20%;
+  height: 20%;
   outline: 2px blue;
-  background-color: aquamarine;
 }
 
 
