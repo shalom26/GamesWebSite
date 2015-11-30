@@ -3,8 +3,18 @@
 header{
   color: #2f2f2f;
   text-align: center;
-  background: url("img/bg2.jpg");
 
+
+}
+#logo{
+  background-color: #D84830;
+  left:3%;
+  height: 150px;
+
+}
+#logoImage{
+  position: absolute;
+  left: 3%;
 }
 
 .container {
@@ -24,15 +34,16 @@ header{
 
 }
 .buttonsContainer{
+  background-color: #a03f2d;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  height: 200px;
+  height: 50px;
   width: 100%;
 }
 .menuButton{
   @extend .hvr-float;
-  margin: 1%;
+  margin: 3%;
   width: 60px;
   height: 30px;
   border-radius: 10px;

@@ -1,10 +1,39 @@
 [
   {
     "id": "minesweeper",
-    "name": "The Ultimate Minesweeper"
+    "name": "The Ultimate Minesweeper",
+    "img": "img/mine.jpg",
+    "rate": 3,
+    "raters": 18,
+    "publishedAt": 1448693940000,
+    "by": "Puki Ben David"
   },
   {
     "id": "chess",
-    "name": "Chess Master"
-  }
+    "name": "Chess Master",
+    "img":"img/chess.gif",
+    "rate": 3,
+    "raters": 18,
+    "publishedAt": 1448693940000,
+    "by": "Puki Ben David"
+  },
+  {
+    "id": "balloons",
+    "name": "Pop theBalloon",
+    "img": "img/balloon.jpg",
+    "rate": 3,
+    "raters": 18,
+    "publishedAt": 1448693940000,
+    "by": "Puki Ben David"
+  },
+  {
+  "id": "Cars",
+  "name": "Car Race",
+  "img": "img/cars.png",
+  "rate": 3,
+  "raters": 18,
+  "publishedAt": 1448693940000,
+  "by": "Puki Ben David"
+}
+
 ]
