@@ -1,0 +1,8 @@
+/*# sourceMappingURL=style-about.css.map */
+.containerAbout {
+  display: flex;
+  flex-direction: row-reverse; }
+  .containerAbout p {
+    max-width: 70%; }
+
+/*# sourceMappingURL=style-about.css.map */
