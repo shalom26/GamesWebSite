@@ -27,20 +27,33 @@
 </header>
 <body>
 
-<div class="container">
-    <div class="game game-1">
-        <img src="img/cars.png" alt=""/>
-    </div>
-    <div class="game game-2">
-        <img src="img/balloon.jpg" alt=""/>
-    </div>
-    <div class="game game-3">
-        <img src="img/chess.gif" alt=""/>
-    </div>
-    <div class="game game-4">
-        <img src="img/mine.jpg" alt=""/>
-    </div>
+<div class="contactForm">
+<div class="form-row contactHeader">
+    <h1>Contact Us</h1>
 </div>
+<form onsubmit="mailToUs(this); return false" class="contactForm2">
+
+
+    <div class="form-row">
+        <label for="userName">Name: </label><br>
+        <input type="text" id="userName" name="userName"/><br>
+    </div>
+    <div class="form-row">
+        <label for="userEmail">Email: </label><br>
+        <input type="text" id="userEmail" name="userEmail"/><br>
+    </div>
+    <div class="form-row">
+        <label for="subject">Subject: </label><br>
+        <input type="text" id="subject" name="subject"/><br>
+    </div>
+    <div class="form-row">
+        <label for="message">Message us</label><br>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Tell us what you think..."></textarea>
+    </div>
+    <input type="submit"/>
+</form>
+</div>
+
 
 <script src="js/main.js"></script>
 <script src="lib/jquery-2.1.4.min.js"></script>
