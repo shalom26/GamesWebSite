@@ -4011,7 +4011,7 @@ header {
 #logo {
   background-color: #D84830;
   left: 3%;
-  height: 150px; }
+  height: 120px; }
 
 #logoImage {
   position: absolute;
@@ -4051,5 +4051,8 @@ header {
   text-shadow: 0px 1px 0px #555650; }
   .menuButton:hover {
     background-color: #555650; }
+
+.getBack {
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
