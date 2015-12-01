@@ -6,12 +6,24 @@ var reTrans;
     console.log('init is called');
     var trans= {
         he : {
-            CODING_GAMES : 'משחקי קידוד',
-            DESC: 'משחקי קידוד היא יוזמה חברתית לעידוד משחקים'
+            Home : 'בית',
+            Games: 'משחקים',
+            About:'עלינו',
+            Contact:'צור קשר',
+            Name:'שם',
+            Email:'אימייל',
+            Subject:'נושא',
+            MessageUs:'שלח הודעה'
         },
         sp : {
-            CODING_GAMES : 'Juegos Del Todos',
-            DESC: 'Juegos estan muy Keif'
+            Home : 'Casa',
+            Games: 'Juegos',
+            About:'Acerca',
+            Contact:'Contacto',
+            Name:'Nombre',
+            Email:'Email',
+            Subject:'Sujeto',
+            MessageUs:'Mensaje nosotros'
         }
 
     };
@@ -45,6 +57,11 @@ var reTrans;
 
 
 function changeLang(lang) {
+    if(localStorage.lang !== null) {
+        localStorage.lang = lang;
+    }else {
+        localStorage.lang = 'en'
+    }
     reTrans(lang);
 }
 
