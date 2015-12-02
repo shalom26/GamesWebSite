@@ -7,9 +7,9 @@ header{
 }
 
 #logo{
-  background-color: #D84830;
+  background-color: #D6514A;
   left:3%;
-  height: 120px;
+  height: 150px;
 
 }
 #logoImage{
@@ -62,6 +62,15 @@ header{
   &:hover {
     background-color:rgba(85, 86, 80, 1) ;
   }
+}
+
+footer{
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  height: 5%;
+  width: 100%;
+  background-color: #A03F2D;
 }
 
 .getBack{

@@ -13,7 +13,8 @@ var reTrans;
             Name:'שם',
             Email:'אימייל',
             Subject:'נושא',
-            MessageUs:'שלח הודעה'
+            MessageUs:'שלח הודעה',
+            aboutContent:'יש דברים שאסור לדבר עליהם '
         },
         sp : {
             Home : 'Casa',
@@ -23,7 +24,8 @@ var reTrans;
             Name:'Nombre',
             Email:'Email',
             Subject:'Sujeto',
-            MessageUs:'Mensaje nosotros'
+            MessageUs:'Mensaje nosotros',
+            aboutContent:'hay cosas que no podemos hablamos'
         }
 
     };
