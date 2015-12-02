@@ -26,7 +26,13 @@ function showPopGame(elGame){
                 $("#gameName").text(gameForPop.name);
                 $("#gameBy").text(gameForPop.by);
                 $("#gameLiveSince").text(gameForPop.publishedAt);
-                console.log(gameForPop.gameLiveSince);
+                $(".gamePhoto").attr("src",game.img);
+                    console.log(gameForPop);
+                $("#aboutTheGame").text(gameForPop.about);
+                $("#ratersNumber").text(gameForPop.raters);
+                $("#rateValue").text(gameForPop.rate);
+
+
             }
 
         });
@@ -36,7 +42,6 @@ function showPopGame(elGame){
     $("#allScreenBlanket").fadeIn();
 
 }
-
 
 
 

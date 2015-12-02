@@ -23,7 +23,7 @@
     position: relative;
     opacity: 1;
     left: 13%;
-    width: 70%;
+    width: 60%;
     height: 50%; }
 
 .topGameDetails {
@@ -31,5 +31,13 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-around; }
+
+.bottomGameDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around; }
+  .bottomGameDetails #aboutTheGame {
+    max-width: 40%; }
 
 /*# sourceMappingURL=style-games.css.map */
