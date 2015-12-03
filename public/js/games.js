@@ -32,25 +32,33 @@ function showPopGame(elGame){
                 $("#gameBy").text(gameForPop.by);
                 $("#gameLiveSince").text(gameForPop.publishedAt);
                 $(".gamePhoto").attr("src",game.img);
-                    console.log(gameForPop);
+                    //console.log(gameForPop.link);
                 $("#aboutTheGame").text(gameForPop.about);
                 $("#ratersNumber").text('rate us? '+gameForPop.raters+' already did');
                 //$("#ratersNumber").html("<p><span style='blue'>rate us?<span> +gameForPop.raters+ already did<p>");
                 $("#rateValue").text(gameForPop.rate);
-                $("#tryButton").attr("onclick","location.href='"+game.link+"';")
+                //$("#tryButton").attr("onclick","addStat("+gameForPop.id+");location.href='"+gameForPop.link+"';");
+                $("#tryButton").click(function () {
+                    console.log('game is : ', gameForPop);
+                $.ajax({
+                        url: 'api/stat',
+                        type: 'POST',
+                        data: {openedGame:gameForPop.name}
+                    },$.getJSON('api/stat'),function(stats){console.log(stats)});
+                    location.href=gameForPop.link;
+                });
+
+
             }
 
         });
-        console.log(gameForPop);
+        //console.log(gameForPop);
     });
 
     $("#allScreenBlanket").fadeIn();
 
 }
 
-function getRate(){
-
-}
 
 
 
