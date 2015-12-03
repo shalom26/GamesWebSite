@@ -55,10 +55,7 @@
             <!--<button onclick="location.href='http://google.com';">try it </button>-->
             <button id="tryButton" >try it </button>
 
-            <div class="rates">
-                <p id="rateValue">rate</p>
-                <p id="ratersNumber" onclick="getRate()">raters</p>
-            </div>
+            <div class="rating" onclick="getRate" data-rate-value=6></div>
         </div>
 
     </div>
@@ -75,6 +72,7 @@
 
 
 <script src="lib/jquery-2.1.4.min.js"></script>
+<script src="lib/rater.min.js" ></script>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/games.js"></script>

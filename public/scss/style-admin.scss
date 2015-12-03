@@ -72,7 +72,7 @@ dt {
 @for $i from 1 through 100 {
   .percentage-#{$i} {
 	&:after {
-	  $value: ($i * 1%);
+	  $value: ($i * 10%);
 	  width: $value;
 	}
   }

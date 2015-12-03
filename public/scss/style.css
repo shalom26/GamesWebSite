@@ -4004,6 +4004,10 @@
     width: 25px;
     height: 25px; }
 
+.displayNon {
+  transition: 1s;
+  display: none; }
+
 header {
   color: #2f2f2f;
   text-align: center; }
