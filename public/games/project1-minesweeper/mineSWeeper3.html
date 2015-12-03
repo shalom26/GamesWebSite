@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>MineSWeeper</title>
+    <link rel="stylesheet" href="mineSWeeper4.css"/>
+</head>
+
+
+<body>
+
+
+<h1 class="headMine"> Playing Mine Sweeper </h1>
+<button class="buttonLevelCustom" onclick="customGame()">Custom Your Game</button>
+<button class="buttonLevel" onclick="initGameBeginners()">Beginners</button>
+<button class="buttonLevel" onclick="initGameMedium()">I Can Play(medium)</button>
+<button class="buttonLevel" onclick="initGameExpert()">Experts</button><br/>
+
+<div class="getCustom">
+    Size of Board : <input  id="numSize"  type="number" /><br>
+    Mines number: <input id="numMines" type="number" /><br><br>
+    <input type="button" onclick="getCustomLevel()" value="enter"/>
+</div>
+
+<!--*******************************************************************************8-->
+
+
+<div class="resultAndBoard" >
+    <div class="results">
+        <div class="resultsClocks">
+            <hr/>
+            <p class="clock">Time: <span style="font-size: 2em">00:00</span></p>
+            <p class="bestTime hidden">Best Time: <span style="font-size: 2em">00:00</span></p>
+            <div class="minesLeft">
+                <img src="mine3.jpg" alt=""/>
+
+            </div>
+        </div>
+        <hr/>
+    </div>
+
+
+    <div>
+        <table class="board">
+        </table>
+    </div>
+</div>
+<div>
+    <div class="restartButton">
+        <button onclick="initGame()"> Restart Game</button>
+    </div>
+    <p class="looseMessage">You Lost  play Again? ----> </p>
+
+</div>
+
+<p class="feedBack">Give us some feedBack at:<a href="mailto:assidahan@gmail.com"
+                                                target="_top"> assidahan@gmail.com</a></p>
+
+<footer>
+    <H3>All rights reserved to: </H3>
+    <H2>Copyright © 2015, by Assi Dahan </H2>
+</footer>
+
+
+<script src="mineSWeeper6.js"></script>
+</body>
+
+</html>

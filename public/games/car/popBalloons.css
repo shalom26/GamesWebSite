@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: white;
+}
+header {
+    text-align: center;
+}
+
+.screen {
+    background-color: brown;
+    height: 600px;
+    padding: 10px;
+}
+
+.balloon {
+    border-radius: 50% ;
+    background-color: #2c704c;
+    height: 55px;
+
+    width: 50px;
+    position:absolute;
+    left: 20px;
+
+
+}

@@ -1,0 +1,189 @@
+
+body {
+    /*background-image: url("mines1.jpg");*/
+    background: radial-gradient(circle,#2bda26 , rgba(71, 72, 66, 1));
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: 100%;
+    height: 90em;
+    up:150px;
+    z-index: -1;
+
+}
+
+.headMine{
+    text-align: center;
+    background-color: rgba(55, 48, 168, 0.87);
+    border: 2px black;
+}
+
+
+.allTable{
+    position: relative;
+
+}
+
+
+.restartButton {
+    margin: auto;
+    /*background: linear-gradient(120deg, black, blue);*/
+    width: 120px;
+    padding: 4px;
+
+}
+
+.restartButton button{
+    background: linear-gradient(120deg, black, blue);
+    width: 120px;
+    height: 40px;
+    border-radius:5px ;
+    cursor: pointer;
+    color: red;
+}
+
+.looseMessage{
+    position: relative;
+    left: 22%;
+    bottom: 55px;
+    opacity: 0;
+    color: red;
+    background-color: black;
+    width: 350px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+table>td{
+    width: 400px;
+}
+.board{
+    margin: auto;
+    box-shadow: 2px 2px 2px #888888;
+    border-collapse: collapse;
+    border: double 3px;
+
+}
+
+
+.board td{
+    border: black 2px solid;
+}
+
+
+.feedBack{
+    font-size: 1.5em;
+    background-color: #2bda26;
+
+}
+
+.getCustom{
+    visibility: hidden;
+}
+
+.buttonLevel {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(55, 48, 168, 0.87);
+    width: 300px;
+    height: 2em;
+    margin: 15px;
+}
+
+.buttonLevelCustom {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(164, 12, 30, 1);
+    width: 20a0px;
+    height: 1.5em;
+    margin: 15px;
+}
+
+
+
+/****************************************************/
+
+.resultAndBoard{
+    background-color: black;
+    width: 500px;
+    margin: auto;
+
+}
+
+
+.results{
+    width: 450px;
+    border: groove black;
+    margin: auto;
+
+}
+
+.resultsClocks{
+    background-color: rgba(55, 48, 168, 0.87) ;
+    padding-bottom: 10px;
+    height: 70px;
+
+}
+
+
+.clock{
+    margin: 20px;
+    font-size: 1em;
+    float: left;
+}
+
+.minesLeft{
+    position: relative;
+    left: 225px;
+    bottom: 55px;
+    font-size: 1.5em;
+    /*width: 100px;*/
+}
+
+.bestTime{
+    margin: 20px;
+    font-size: 1em ;
+
+}
+
+
+/***************************************************/
+
+.hidden{
+    background-color: rgba(52, 53, 48, 0.87);
+    visibility: hidden;
+}
+
+
+.shown{
+    background-color: gray;
+    text-align: center;
+    width: 40px;
+    height:40px;
+}
+
+.squares{
+    width: 40px;
+    height:40px;
+    background-color: rgba(52, 53, 48, 0.87);
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+.bomb{
+    width: 40px;
+    height:40px;
+    background-color: rgba(52, 53, 48, 0.87);
+    text-align: center;
+    font-size: 1.3em;
+    /*background-image: url("mine2.jpg");*/
+}
+
+footer{
+    position: fixed;
+    /* margin: auto; */
+    text-align: center;
+    top: 650px;
+    left: 67%;
+    z-index: -1;
+}

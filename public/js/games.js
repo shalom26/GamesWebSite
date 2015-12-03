@@ -34,10 +34,10 @@ function showPopGame(elGame){
                 $(".gamePhoto").attr("src",game.img);
                     console.log(gameForPop);
                 $("#aboutTheGame").text(gameForPop.about);
-                $("#ratersNumber").text(gameForPop.raters);
+                $("#ratersNumber").text('rate us? '+gameForPop.raters+' already did');
+                //$("#ratersNumber").html("<p><span style='blue'>rate us?<span> +gameForPop.raters+ already did<p>");
                 $("#rateValue").text(gameForPop.rate);
-
-
+                $("#tryButton").attr("onclick","location.href='"+game.link+"';")
             }
 
         });
@@ -48,7 +48,9 @@ function showPopGame(elGame){
 
 }
 
+function getRate(){
 
+}
 
 
 
