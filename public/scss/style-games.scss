@@ -32,7 +32,7 @@ $popRatio : 13%;
     position: relative;
     opacity: 1;
     left: $popRatio;
-    width: 70%;
+    width: 60%;
     height: 50%;
   }
 }
@@ -45,7 +45,16 @@ $popRatio : 13%;
   justify-content: space-around;
 }
 
+.bottomGameDetails{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
 
+  #aboutTheGame{
+    max-width: 40%;
+  }
+}
 
 
 
