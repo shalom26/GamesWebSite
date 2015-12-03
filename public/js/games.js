@@ -22,6 +22,11 @@ function showPopGame(elGame){
         var elGamesContainer = $('.container');
         games.forEach(function(game){
             if (game.id === elGame.id) {
+                $.ajax({
+                    url: 'api/stat',
+                    type: 'POST',
+                    data: {name:game.name}
+                },$.getJSON('api/stat'),function(stats){console.log(stats)});
                 gameForPop=game;
                 $("#gameName").text(gameForPop.name);
                 $("#gameBy").text(gameForPop.by);

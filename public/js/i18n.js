@@ -25,7 +25,7 @@ var reTrans;
             Email:'Email',
             Subject:'Sujeto',
             MessageUs:'Mensaje nosotros',
-            aboutContent:'hay cosas que no podemos hablamos'
+            aboutContent:'hay cosas que no podemos hablamos '
         }
 
     };
