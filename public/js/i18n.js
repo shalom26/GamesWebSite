@@ -59,12 +59,14 @@ var reTrans;
 
 
 function changeLang(lang) {
+    $('html').addClass('.displayNon');
     if(localStorage.lang !== null) {
         localStorage.lang = lang;
     }else {
         localStorage.lang = 'en'
     }
     reTrans(lang);
+    $('html').removeClass('.displayNon');
 }
 
 

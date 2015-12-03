@@ -11,17 +11,25 @@ function getStat(){
 
     $.getJSON('api/stat',function(stats) {
         console.log(stats);
+        gamesNames=[];
         stats.forEach(function (stat) {
-            if (gamesStat[stat.name] === undefined) gamesStat[stat.name] = 1;
+            if (gamesStat[stat.name] === undefined) {
+                gamesStat[stat.name] = 1;
+                gamesNames.push(stat.name);
+            }
             else gamesStat[stat.name]++;
                 });
-        for(var i = 0 ; i < 5 ; i++) {
-            var elStst;
-            elStst = document.querySelector('.stst-'+i);
-            elStst.classList.add('percentage-' + gamesStat[i]);
-            //console.log(elStst);
+
+        var strHTML = '';
+        for(var i = 0 ; i < gamesNames.length ; i++) {
+           strHTML += '<dd class="stst-'+i+' percentage percentage-'+
+               gamesStat[gamesNames[i]]+
+               '"><span class="text">'+gamesNames[i]+
+               '</span></dd>';
         }
-        //console.log(gamesStat);
+      var elSataCont = document.querySelector('.statCont');
+        elSataCont.innerHTML = strHTML;
+        console.log(strHTML);
         });
 
 }

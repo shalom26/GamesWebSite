@@ -1,5 +1,10 @@
 @import "hover";
 
+.displayNon{
+  transition: 1s;
+  display: none;
+}
+
 header{
   color: #2f2f2f;
   text-align: center;
